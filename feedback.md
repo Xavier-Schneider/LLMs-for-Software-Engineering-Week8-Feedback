@@ -232,7 +232,7 @@ The new guideline worked because it avoided adding logging to a timing-sensitive
 #### Guideline #7: Instruct to Trace from Entry Point
 
 **Guideline Definition**
-
+Instruct the agent to trace from the entry point of your program.
 
 **Prompt and Context:**   
 Context:  
@@ -252,8 +252,8 @@ I have an algebra solver written in Python. It is currently failing to find a so
 ### 3. New and Updated Guidelines that worked for Problem B
 
 #### Guideline #7: Instruct the LLM to write tests and keep iterating on a fix until the code passes the tests
-**Guideline Definition**
-
+**Guideline Definition**  
+Instruct the LLM to write tests and keep iterating on a fix so that it won't just implement a fix and confidently move on thinking it solved the problem. The tests give it feedback on whether it actually solved the problem. If it did not, it should keep iterating until it comes up with a workable solution.
 
 **Prompt and Context:**  
 Context:  
