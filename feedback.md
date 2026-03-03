@@ -707,3 +707,5 @@ The improved guideline clearly listed all constraints and required the model to 
 
 ---
 
+These guidelines were refined with the help of GPT-5.2
+
