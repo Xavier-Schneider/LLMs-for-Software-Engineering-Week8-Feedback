@@ -1,4 +1,4 @@
-# Week 5 Feedback: Code Summarization / Comprehension
+# Week 8 DevReview / Debug
 
 **Authors:** Xavier Schneider, Greg French, Max Ku  
 
