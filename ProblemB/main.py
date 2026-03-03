@@ -125,24 +125,23 @@ def main() -> None:
         cmd = parts[0].lower()
         arg = parts[1] if len(parts) > 1 else ""
 
-        match cmd:
-            case "solve":
-                handle_solve(arg)
-            case "system":
-                handle_system()
-            case "simplify":
-                handle_simplify(arg)
-            case "factor":
-                handle_factor(arg)
-            case "expand":
-                handle_expand(arg)
-            case "help":
-                print(HELP_TEXT)
-            case "quit" | "exit":
-                print("Goodbye!")
-                break
-            case _:
-                print(f"  Unknown command: {cmd}. Type 'help' for usage.")
+        if cmd == "solve":
+            handle_solve(arg)
+        elif cmd == "system":
+            handle_system()
+        elif cmd == "simplify":
+            handle_simplify(arg)
+        elif cmd == "factor":
+            handle_factor(arg)
+        elif cmd == "expand":
+            handle_expand(arg)
+        elif cmd == "help":
+            print(HELP_TEXT)
+        elif cmd in ("quit", "exit"):
+            print("Goodbye!")
+            break
+        else:
+            print(f"  Unknown command: {cmd}. Type 'help' for usage.")
         print()
 
 
