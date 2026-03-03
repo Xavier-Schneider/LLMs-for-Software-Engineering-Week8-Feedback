@@ -57,7 +57,7 @@ def solve_equation(equation_str: str) -> dict:
     var = syms[0]
     steps.append(f"Solving for: {var}")
 
-    solutions = solve(equation, var)
+    solutions = list(filter(None, solve(equation, var)))
     steps.append(f"Solutions: {', '.join(str(s) for s in solutions)}")
 
     return {
