@@ -252,7 +252,7 @@ python3 ./ProblemB/main.py
 Since the program is set up to wait for user input, the agent will keep waiting for the program to finish, but the program never finishes since it's waiting for user input.
 
 **Analysis:**  
-By trying to run the main.py file directly, the agent struggles to achieve anything meaningful as it gets completely stuck and then needs human intervention to get it unstuck. This behaviour is simply unnaceptable if you want autonomous coding agents doing work for your autonomously.
+By trying to run the main.py file directly, the agent struggles to achieve anything meaningful as it gets completely stuck and then needs human intervention to get it unstuck. This behaviour is simply unnaceptable if you want autonomous coding agents doing work for you autonomously.
 
 ---
 
